@@ -380,7 +380,7 @@ public class DatePickerPopWin extends PopupWindow implements OnClickListener {
      * @return
      */
     public static long getLongFromyyyyMMdd(String date) {
-        SimpleDateFormat mFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
+        SimpleDateFormat mFormat = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault());
         Date parse = null;
         try {
             parse = mFormat.parse(date);
@@ -395,7 +395,7 @@ public class DatePickerPopWin extends PopupWindow implements OnClickListener {
     }
 
     public static String getStrDate() {
-        SimpleDateFormat dd = new SimpleDateFormat("yyyy-MM-dd",Locale.CHINA);
+        SimpleDateFormat dd = new SimpleDateFormat("dd-MM-yyyy",Locale.CHINA);
         return dd.format(new Date());
     }
 
